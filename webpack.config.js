@@ -40,5 +40,4 @@ module.exports = {
     }),
     isProduction && new MiniCssExtractPlugin(),
   ].filter(Boolean),
-  mode: isProduction ? 'production' : 'development',
 };
