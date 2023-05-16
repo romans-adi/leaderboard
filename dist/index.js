@@ -1,0 +1,1 @@
+(()=>{"use strict";document.querySelector("#player-data").addEventListener("submit",(e=>{e.preventDefault()}))})();
