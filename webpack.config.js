@@ -6,7 +6,6 @@ const isProduction = process.env.NODE_ENV === 'production';
 const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader';
 
 module.exports = {
-  mode: 'development',
   entry: './src/index.js',
   watchOptions: {
     ignored: '**/node_modules',
@@ -40,4 +39,5 @@ module.exports = {
     }),
     isProduction && new MiniCssExtractPlugin(),
   ].filter(Boolean),
+  mode: isProduction ? 'production' : 'development',
 };
