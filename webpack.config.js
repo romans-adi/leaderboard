@@ -1,9 +1,16 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const isProduction = process.env.NODE_ENV === 'production';
+const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader';
 
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
+  watchOptions: {
+    ignored: '**/node_modules',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
@@ -12,18 +19,17 @@ module.exports = {
     static: {
       directory: path.resolve(__dirname, 'dist'),
     },
-    port: 8883,
-    open: true,
-    hot: true,
     compress: true,
-    historyApiFallback: true,
+    port: 8080,
+    liveReload: true,
+    hot: false,
   },
   module: {
     rules: [
       {
         test: /\.css$/i,
         include: path.resolve(__dirname, 'src'),
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
+        use: [stylesHandler, 'css-loader', 'postcss-loader'],
       },
     ],
   },
@@ -32,5 +38,7 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html',
     }),
-  ],
+    isProduction && new MiniCssExtractPlugin(),
+  ].filter(Boolean),
+  mode: isProduction ? 'production' : 'development',
 };
