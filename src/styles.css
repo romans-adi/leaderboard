@@ -10,3 +10,7 @@ body {
 li:nth-child(even) {
   background: #ddd;
 }
+
+.red {
+  color: rgb(185 28 28);
+}

@@ -9,6 +9,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -25,7 +26,11 @@
 
 # 📖 <a name="about-project">Leaderboard</a>
 
-Simple mid-fidelity single-page application (SPA) that allows players to add their score to the list.
+This is a mid-fidelity single-page application (SPA) that provides a simple way for players to add their scores to a list and retrieve the scoreboard. The application uses API requests and local storage to store and synchronize the data.
+
+The synchronization process ensures that the data remains intact even when there is no response from the server or when data retrieval is not possible. When new data is fetched from the server, it is updated in the local storage. Additionally, any new scores that were not sent yet, are sent to the server.
+
+The application logic revolves around comparing the existing data stored in the local storage with the data fetched from the server to ensure consistency and accuracy.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -35,6 +40,7 @@ Simple mid-fidelity single-page application (SPA) that allows players to add the
     <li><a href="https://html.spec.whatwg.org/multipage/">HTML</a></li>
    <li><a href="https://www.w3.org/TR/CSS/#css">CSS</a></li>
    <li><a href="https://tailwindcss.com/">Tailwind</a></li>
+      <li><a href="https://tailwindcss.com/">JavaScript</a></li>
   </ul>
 
 <!-- Features -->
@@ -46,7 +52,17 @@ Simple mid-fidelity single-page application (SPA) that allows players to add the
   <li>Tailwind CSS framework</li>
   <li>Built with a Webpack bundler</li>
   <li>Gitflow</li>
+  <li>Using API request</li>
+  <li>Data Synchronization with local storage</li>
 </ul>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo" target="_blank"></a>
+
+- [Online version of my project](https://romans-adi.github.io/leaderboard)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,7 +107,7 @@ To run the project, execute the following command:
 
 ### Deployment
 
-You can deploy this project using:
+This project was deployed using:
 
 - [GitHub Pages](https://pages.github.com/)
 
@@ -114,8 +130,7 @@ You can deploy this project using:
 ### Future Features <a name="future-features"></a>
 
 - **Add more styles**
-- **Add functionality**
-- **Add API request**
+- **Connect game to the scoreboard**
 - **Rearrange project to MVC patters**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
