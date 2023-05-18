@@ -9,6 +9,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -54,6 +55,14 @@ The application logic revolves around comparing the existing data stored in the 
   <li>Using API request</li>
   <li>Data Synchronization with local storage</li>
 </ul>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo" target="_blank"></a>
+
+- [Online version of my project](https://romans-adi.github.io/leaderboard)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
