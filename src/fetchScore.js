@@ -4,7 +4,7 @@ import { getFromStorage, syncData } from './storage.js';
 const fetchScore = async (scoresList) => {
   try {
     localStorage.removeItem('scores');
-    const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/MfoLYZGPReGfyuYdGRJ7/scores/', {
+    const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/zKoPy5dluJN9ghN7v3i1/scores/', {
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
@@ -16,7 +16,7 @@ const fetchScore = async (scoresList) => {
       const scores = data.result;
       const sortedScores = scores.sort((a, b) => b.score - a.score);
       renderScores(sortedScores, scoresList);
-      syncData(sortedScores);
+      syncData();
     } else {
       throw new Error('Failed to fetch scores from API');
     }

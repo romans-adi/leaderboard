@@ -33,7 +33,7 @@ const addScore = async (event) => {
   }
 
   try {
-    const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/MfoLYZGPReGfyuYdGRJ7/scores/', {
+    const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/zKoPy5dluJN9ghN7v3i1/scores/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
