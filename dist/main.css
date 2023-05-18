@@ -435,6 +435,8 @@ video {
   font-family: 'Comic Neue', cursive;
 }li:nth-child(even) {
   background: #ddd;
+}.red {
+  color: rgb(185 28 28);
 }.hover\:bg-teal-800:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(17 94 89 / var(--tw-bg-opacity));
