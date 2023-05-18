@@ -107,7 +107,7 @@ To run the project, execute the following command:
 
 ### Deployment
 
-You can deploy this project using:
+This project was deployed using:
 
 - [GitHub Pages](https://pages.github.com/)
 
