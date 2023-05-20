@@ -8,7 +8,7 @@ const displayErrorMessage = (message, timeout = 3000) => {
   errorContainer.innerHTML = '';
   const errorMessage = document.createElement('span');
   errorMessage.textContent = message;
-  errorMessage.classList.add('font-bold', 'red');
+  errorMessage.classList.add('font-bold', 'text-white', 'text-4xl');
   errorContainer.appendChild(errorMessage);
 
   setTimeout(() => {

@@ -8,6 +8,7 @@ export const saveToStorage = (score) => {
   storedData.push(score);
   localStorage.setItem('scores', JSON.stringify(storedData));
 };
+
 export const syncData = async () => {
   try {
     const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/zKoPy5dluJN9ghN7v3i1/scores/');

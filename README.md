@@ -20,13 +20,16 @@
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [:seedling: Credits ](#seedling-credits-)
   - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 <a name="about-project">Leaderboard</a>
 
-This is a mid-fidelity single-page application (SPA) that provides a simple way for players to add their scores to a list and retrieve the scoreboard. The application uses API requests and local storage to store and synchronize the data.
+The Leaderboard is a platform that allows users to view and add scores to a leaderboard. It provides a user-friendly interface for tracking and displaying recent scores, along with the option to add new scores.
+
+The application uses API requests and local storage to store and synchronize the data.
 
 The synchronization process ensures that the data remains intact even when there is no response from the server or when data retrieval is not possible. When new data is fetched from the server, it is updated in the local storage. Additionally, any new scores that were not sent yet, are sent to the server.
 
@@ -37,10 +40,18 @@ The application logic revolves around comparing the existing data stored in the 
 ### Tech Stack <a name="tech-stack"></a>
 
   <ul>
-    <li><a href="https://html.spec.whatwg.org/multipage/">HTML</a></li>
-   <li><a href="https://www.w3.org/TR/CSS/#css">CSS</a></li>
-   <li><a href="https://tailwindcss.com/">Tailwind</a></li>
-      <li><a href="https://tailwindcss.com/">JavaScript</a></li>
+<li>HTML5</br>
+<i>Markup language used for structuring the web page.</i></li>
+<li>CSS3</br>
+<i>Styling language used to enhance the visual appearance and layout of the application.</i></li>
+<li>JavaScript (ES6)</br>
+<i>Programming language used to add interactivity and dynamic functionality to the application.</i></li>
+<li>Tailwind CSS</br>
+<i>CSS framework used for rapid UI development with pre-defined utility classes.</i></li>
+<li></br>
+<i>PlayPager: Embedded chess game integrated into the application.</i></li>
+<li></br>
+<i>Git: Version control system for managing the project's source code.</i></li>
   </ul>
 
 <!-- Features -->
@@ -48,12 +59,24 @@ The application logic revolves around comparing the existing data stored in the 
 ### Key Features <a name="key-features"></a>
 
 <ul>
-  <li>Mid-fidelity</li>
-  <li>Tailwind CSS framework</li>
-  <li>Built with a Webpack bundler</li>
-  <li>Gitflow</li>
-  <li>Using API request</li>
-  <li>Data Synchronization with local storage</li>
+  <li>
+    Recent Scores: The application displays a list of recent scores on the leaderboard. Each score entry includes the player's name and their corresponding score.
+  </li>
+  <li>
+    Refresh Button: Users can refresh the leaderboard to see the latest scores without reloading the entire page.
+  </li>
+  <li>
+    Add Score Form: Users can add their own scores to the leaderboard by entering their name and the score achieved. The form validates the input and provides error messages if necessary.
+  </li>
+  <li>
+    Game Integration: The application includes an embedded chess game where users can play chess directly on the page.
+  </li>
+  <li>
+    Chess Rules: The application provides a section that explains the rules of chess, including piece movements, special moves, and game-ending conditions.
+  </li>
+  <li>
+    Responsive Design: The user interface is designed to be responsive and compatible with various screen sizes and devices.
+  </li>
 </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -158,6 +181,14 @@ If you would like to express your support, you can give this project a star. You
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to express my gratitude to Microverse, my coding school, for providing me with valuable resources and the opportunity to hone my skills in this field.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## :seedling: Credits <a name="credits"></a>
+
+Game Creator: The chess game embedded in this application was created by PlayPager.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

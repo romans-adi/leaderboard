@@ -1,16 +1,160 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
+/* Global */
 body {
-  font-family: 'Comic Neue', cursive;
-}
-
-li:nth-child(even) {
-  background: #ddd;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 
 .red {
-  color: rgb(185 28 28);
+  color: rgb(185, 28, 28);
+}
+
+a {
+  font-weight: bold;
+}
+
+/* Header styles */
+header {
+  background-color: #334166;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 4rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  transition: 2s all ease-in-out;
+}
+
+/* Navigation */
+nav ul li {
+  font-size: 1.5rem;
+  transition: 3s all ease-in;
+  background: rgb(22, 22, 110);
+  padding: 10px;
+}
+
+nav ul li::before {
+  content: "";
+  color: goldenrod;
+  display: inline-block;
+  margin-right: 0.3rem;
+  font-size: 1.5rem;
+}
+
+nav ul li:nth-child(1)::before {
+  content: "♔";
+}
+
+nav ul li:nth-child(2)::before {
+  content: "♕";
+}
+
+nav ul li:nth-child(3)::before {
+  content: "♖";
+}
+
+nav ul li:nth-child(4)::before {
+  content: "♘";
+}
+
+/* Buttons */
+button {
+  background-color: #f8f8f8;
+  color: #333;
+  border: #333 solid 2px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+  color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+/* Scoreboard */
+.scoreboard li {
+  font-weight: bold;
+}
+
+.scoreboard li:nth-child(odd) {
+  background: #4b1e00;
+  color: #fff;
+}
+
+.scoreboard li:nth-child(even) {
+  background: #e4943e;
+  color: #fff;
+}
+
+/* Results */
+.results::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* Brown color */
+  background-image:
+    linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%),
+    linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+  filter: brightness(70%);
+  z-index: -1;
+}
+
+/* Form */
+.chessboard-container {
+  background-image: url("./img/scoreboard-bg.webp"), url("./img/scoreboard-bg.jpg");
+  background-size: cover;
+}
+
+/* Scrollbar */
+.scoreboard::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scoreboard::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scoreboard::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.scoreboard::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Rules */
+.rules {
+  background: linear-gradient(to bottom, rgba(9, 48, 40, 0.4), rgba(35, 122, 87, 0.2));
+  font-family: 'Roboto', sans-serif;
+}
+
+#rules h2::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  width: 15px;
+  height: 2px;
+  background-color: #e4943e;
+  margin-top: 4px;
+}
+
+/* Footer */
+footer a:hover {
+  color: green;
 }
