@@ -8,22 +8,22 @@
     <title>Leaderboard</title>
   </head>
   <body class="flex flex-col min-h-screen">
-    <header class="flex flex-col lg:flex-row mb-4 py-12 pb-4 shadow-2xl shadow-blue-500 justify-between items-center px-24">
+    <header class="flex flex-col lg:flex-row mb-4 py-12 pb-4 shadow-2xl shadow-blue-500 justify-between items-center px-10 md:px-24">
       <h1 class="text-4xl font-bold border-4 border-white p-4 my-12 text-white bg-black cursor-pointer rotate-6">
         <a href="#">Leaderboard</a>
       </h1>
       <nav class="flex py-6">
-        <ul class="space-x-4 bg-slate-300 flex justify-end list-none gap-6 text-white">
-          <li class="cursor-pointer shadow-lg shadow-blue-500 hover:shadow-indigo-400 hover:bg-amber-900 text-sm whitespace-nowrap">
+        <ul class="md:flex md:justify-end list-none text-white grid grid-cols-2 grid-rows-2 gap-4 w-full ">
+          <li class="cursor-pointer shadow-lg shadow-blue-500 hover:shadow-indigo-400 hover:bg-amber-900 text-sm flex items-center lg:whitespace-nowrap">
             <a href="#results">Recent Scores</a>
           </li>
-          <li class="cursor-pointer shadow-lg shadow-blue-500 hover:shadow-indigo-400 hover:bg-amber-900 text-sm whitespace-nowrap">
+          <li class="cursor-pointer shadow-lg shadow-blue-500 hover:shadow-indigo-400 hover:bg-amber-900 text-sm flex items-center lg:whitespace-nowrap">
             <a href="#add-player">Add your score</a>
           </li>
-          <li class="cursor-pointer shadow-lg shadow-blue-500 hover:shadow-indigo-400 hover:bg-amber-900 text-sm whitespace-nowrap">
+          <li class="cursor-pointer shadow-lg shadow-blue-500 hover:shadow-indigo-400 hover:bg-amber-900 text-sm flex items-center lg:whitespace-nowrap">
             <a href="#game">Game</a>
           </li>
-          <li class="cursor-pointer shadow-lg shadow-blue-500 hover:shadow-indigo-400 hover:bg-amber-900 text-sm whitespace-nowrap">
+          <li class="cursor-pointer shadow-lg shadow-blue-500 hover:shadow-indigo-400 hover:bg-amber-900 text-sm flex items-center lg:whitespace-nowrap">
             <a href="#rules">Chess Rules</a>
           </li>
         </ul>
