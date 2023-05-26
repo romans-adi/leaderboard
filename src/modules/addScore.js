@@ -53,7 +53,7 @@ const addScore = async (event) => {
       throw new Error(`Failed to add score: ${data.error}`);
     }
   } catch (error) {
-    displayErrorMessage(`Error adding score: ${error.message}`);
+    displayErrorMessage(`Request error {error.message}<br />Your score was saved locally.`);
     saveToStorage({ name, score });
   }
 };
